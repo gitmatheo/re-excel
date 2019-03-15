@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/re-excel/precache-manifest.c72bda53e92c50007c50b8c3ba5b3adb.js"
+  "/re-excel/precache-manifest.56064319b6d6d35d808a71b1052785a5.js"
 );
 
 workbox.clientsClaim();
