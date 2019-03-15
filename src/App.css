@@ -1,33 +1,44 @@
-.App {
-  text-align: center;
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #fff;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.image {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  background-color: teal;
+  background-image: url(./images/excel.jpg);
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1000;
 }
 
-.App-link {
-  color: #61dafb;
+.cells {
+  position: absolute;
+  top: 732px;
+  left: 42px;
+  display: grid;
+  grid-template-columns: 126px 103px 97px 75px 110px 95px 84px 79px 96px 105px 70px 74px 150px;
+  grid-template-rows: repeat(2, 20px);
+  grid-gap: 1px;
+  background: #000000;
+  grid-auto-flow: dense;
+  overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cells__input {
+  border: none;
+  /* background-color: transparent; */
+  padding: 0 6px;
 }
+/*# sourceMappingURL=style.css.map */
