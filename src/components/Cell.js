@@ -2,8 +2,8 @@ import React, { Component } from "react";
 
 class Cell extends Component {
   state = {
-    text: ` `,
-    textToShow: "To jest przykładowy text do wpisania w komórkę",
+    text: ``,
+    textToShow: this.props.text,
     counter: 0
   };
 
@@ -17,6 +17,7 @@ class Cell extends Component {
 
   render() {
     const n = 220;
+    // const borderBottom = this.props.bb ? "bb" : null;
     return (
       <input
         className="cells__input"

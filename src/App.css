@@ -5,10 +5,16 @@
   padding: 0;
 }
 
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+
 body {
   background: #fff;
-  font-family: "Noto Sans", sans-serif;
-  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+}
+
+html {
+  font-size: 10px;
 }
 
 .image {
@@ -16,7 +22,7 @@ body {
   width: 1920px;
   height: 1080px;
   background-color: teal;
-  background-image: url(./images/excel.jpg);
+  background-image: url(./images/excel.svg);
   background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
@@ -25,20 +31,31 @@ body {
 
 .cells {
   position: absolute;
-  top: 732px;
-  left: 42px;
+  top: 709.5px;
+  left: 41.2px;
   display: grid;
-  grid-template-columns: 126px 103px 97px 75px 110px 95px 84px 79px 96px 105px 70px 74px 150px;
-  grid-template-rows: repeat(2, 20px);
-  grid-gap: 1px;
+  grid-template-columns: 12.76rem 10.4rem 9.84rem 7.6rem 11.05rem 9.62rem 8.45rem 8.07rem 9.66rem 10.65rem 7.07rem 7.46rem 15.15rem;
+  grid-template-rows: 2.12rem 2.14rem 2.15rem;
+  /* grid-gap: 0.06rem; */
   background: #000000;
   grid-auto-flow: dense;
   overflow: hidden;
+  /* display: none; */
 }
 
 .cells__input {
   border: none;
+  border-bottom: 0.05rem solid black;
+  border-right: 0.05rem solid black;
   /* background-color: transparent; */
   padding: 0 6px;
+  font-size: 9.5px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.1px;
 }
+
+/* .bb {
+  border-bottom: 0.5px solid black !important;
+} */
 /*# sourceMappingURL=style.css.map */
